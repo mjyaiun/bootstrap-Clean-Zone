@@ -23,7 +23,7 @@
     				
            	},
            	afterClose: function(button, modal) {
-            	//d关闭模态框后
+            	//关闭模态框后
             	closeCallback = button.attr('data-closeevent');
             	if(typeof(closeCallback) != undefined){
             		eval(closeCallback);
