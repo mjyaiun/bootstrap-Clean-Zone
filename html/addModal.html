@@ -1,0 +1,65 @@
+ <div class="md-modal colored-header custom-width md-effect-9" id="org-add" style="z-index:1040;" >
+	<form id="frmOrgAdd" class="form-horizontal" role="form" novalidate="" >
+		<div class="md-content">
+			<div class="modal-header col-sm-12">
+				<h3>新增机构</h3>
+				<button id="btnOrgAddClose" type="button" class="close md-close" data-dismiss="modal" aria-hidden="true" >&times;</button>
+			</div>
+			
+			<div class="modal-body col-sm-12" >
+	            <div class="form-group col-sm-12">
+	                <label class="col-sm-4 control-label">机构名称：</label>
+	                <div class="col-sm-6">
+	                	<input id="add_orgName" class="form-control parsley-validated" parsley-trigger="change" required="" type="text" placeholder="机构名称">
+	                </div>
+	            </div>
+	            
+	            <div class="form-group col-sm-12" hidden="">
+	                <label class="col-sm-4 control-label">所属机构ID：</label>
+	                <div class="col-sm-6">
+	                	<input id="add_parentOrgId" class="form-control" type="text">
+	                </div>
+	            </div>
+	            <div class="form-group col-sm-12">
+	                <label class="col-sm-4 control-label">所属机构：</label>
+	                <div class="col-sm-6">
+	                	<div class="input-group">
+	                		<input id="add_parentOrgName" class="form-control parsley-validated" parsley-trigger="change" required="" type="text" parsley-error-container="#add_error_org" placeholder="所属机构" readonly="readonly" />
+	                		<span class="input-group-btn btn btn-primary" onclick="btnSearchOrgForOrg('add');">
+	                			<span class="glyphicon glyphicon-search"></span>
+	                		</span>
+	                	</div>
+	                	<div id="add_error_org"></div>
+	                </div>
+	            </div>
+	            
+				<div class="form-group col-sm-12">
+	                <label class="col-sm-4 control-label">联系人：</label>
+	                <div class="col-sm-6">
+	                	<input id="add_connector" class="form-control parsley-validated" parsley-trigger="change" type="text" placeholder="联系人">
+	                </div>
+	            </div>
+	            <div class="form-group col-sm-12">
+	                <label class="col-sm-4 control-label">联系电话：</label>
+	                <div class="col-sm-6">
+	                	<input id="add_phone" class="form-control parsley-validated" parsley-trigger="change" parsley-type="phone" placeholder="(XXX) XXXX XXX" type="text">
+	                </div>
+	            </div>
+				<div class="form-group col-sm-12">
+					<label class="col-sm-4 control-label">电子邮箱：</label>
+					<div class="col-sm-6">	
+						<input id="add_email" class="form-control parsley-validated" parsley-trigger="change" type="email" placeholder="username@example.com">
+					</div>
+				</div>        
+			</div>
+			
+			<div class="modal-footer col-sm-12">
+				<div class="col-sm-6" align="right"><button class="btn btn-default btn-flat md-close" >取&nbsp;&nbsp;消</button></div>
+				<div class="col-sm-6" align="left"><button class="btn btn-primary btn-flat" >提&nbsp;&nbsp;交</button></div>
+			</div>
+			
+		</div>
+	</form>
+</div>
+<div class="md-overlay"></div>
+
