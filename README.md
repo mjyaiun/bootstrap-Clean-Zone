@@ -1,5 +1,7 @@
 # clean-zone-Modal
 bootstrap前端管理框架
+需要引用style.css、bootstrap.css、bootstrap.js文件
+
 
 # 一、模态框
 前端框架：clean zone，基于bootstrap的样式框架，用于管理平台；
